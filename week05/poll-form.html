@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form - User</title>
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | Wellington Passos | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fullname">Full name:</label>
+                <input type="text" id="fullname" name="fullname">
+                <label for="useremail">Email :</label>
+                <input type="email" id="useremail" name="useremail">
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="cars">what's your favorite browser?</label>
+                <select id="cars" name="cars">
+                    <option value="Chrome">Chrome</option>
+                    <option value="FireFox">FireFox</option>
+                    <option value="Edge">Edge</option>
+                    <option value="Safari">Safari</option>
+                </select>
+                <p></p>
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+                <P></P>
+                <label for="feedback">List the places you have lived:</label>
+                <textarea name="feedback" id="feedback" rows="4"
+                    placeholder="Provo Utah, Bellevue Washington, Everett WA, Sultan WA"></textarea>
+                <p></p>
+            </fieldset>
+            <button type="button" onclick="alert('Your answers have been submitted!')">Submit Poll</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>©2025 | HTML Form - User Poll Activity | Wellington Passos</p>
+    </footer>
+
+</body>
+
+</html>

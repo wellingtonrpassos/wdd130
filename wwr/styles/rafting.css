@@ -220,3 +220,42 @@ footer{
     max-width: 1200px;
     margin: 2rem auto;
 }
+
+.team {
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.employee-profiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.employee-profiles figure {
+    margin: 0;
+    text-align: center;
+    width: 250px; /* Set fixed width for figure */
+}
+
+.employee-profiles img {
+    width: 250px; /* Fixed width */
+    height: 250px; /* Fixed height - makes all images square */
+    object-fit: cover; /* This will crop the image to fit the fixed dimensions */
+    border-radius: 8px;
+}
+
+.employee-profiles figcaption {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 968px) {
+    .employee-profiles {
+        flex-direction: column;
+    }
+}
