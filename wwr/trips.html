@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Wellington Passos">
+    <meta name="description" content="Discover our exciting rafting trips and adventures. From beginner-friendly trips to advanced challenges, find the perfect rafting experience for you.">
+    <link rel="preconnect" href="https://fonts.google.com/specimen/Boldonse">
+    <link rel="preconnect" href="https://fonts.google.com/specimen/Winky+Sans">
+    <title>Our Trips - White Water Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>  
+        <div>
+            <img src="images/raftinglogo.webp" alt="Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home Page</a>
+            <a href="about.html">About us</a>
+            <a href="trips.html">Find your Trip</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting65_600.jpg" alt="Rafting Adventure">
+            <h1>Our Adventures</h1>
+        </div>
+
+        <!-- Trip Descriptions Section -->
+        <section class="trips-grid">
+            <div class="trip-card">
+                <img src="images/beginners-trip.webp" alt="Beginner's Rapids">
+                <h2>Beginner's Paradise</h2>
+                <p>Perfect for first-timers, this 3-hour trip features Class I-II rapids. Experience the thrill of rafting while learning the basics from our expert guides.</p>
+                <a href="contact.html" class="cta-button">Book Now</a>
+            </div>
+
+            <div class="trip-card">
+                <img src="images/family-adventure.webp" alt="Family Rafting">
+                <h2>Family Adventure</h2>
+                <p>A full-day expedition suitable for ages 8+. Enjoy Class II-III rapids, scenic stops, and a riverside lunch.</p>
+                <a href="contact.html" class="cta-button">Book Now</a>
+            </div>
+
+            <div class="trip-card">
+                <img src="images/extreme-rapids.webp" alt="Extreme Rapids">
+                <h2>Extreme Rapids Challenge</h2>
+                <p>For experienced rafters only. Navigate Class IV-V rapids in this intense 2-day adventure with overnight camping.</p>
+                <a href="contact.html" class="cta-button">Book Now</a>
+            </div>
+        </section>
+
+        <!-- Trip Details Table -->
+        <section class="trip-table">
+            <h2>Trip Details & Pricing</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Duration</th>
+                        <th>Difficulty</th>
+                        <th>Price</th>
+                        <th>Age Limit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beginner's Paradise</td>
+                        <td>3 hours</td>
+                        <td>Easy</td>
+                        <td>$89</td>
+                        <td>6+</td>
+                    </tr>
+                    <tr>
+                        <td>Family Adventure</td>
+                        <td>Full Day</td>
+                        <td>Moderate</td>
+                        <td>$159</td>
+                        <td>8+</td>
+                    </tr>
+                    <tr>
+                        <td>Extreme Rapids</td>
+                        <td>2 Days</td>
+                        <td>Expert</td>
+                        <td>$399</td>
+                        <td>16+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="trips-cta">
+            <h2>Ready for Your Adventure?</h2>
+            <p>Contact us today to book your perfect rafting experience!</p>
+            <a href="contact.html" class="cta-button">Contact Us Now</a>
+        </section>
+    </main>
+
+    <footer> 
+        <p>© 2025 White Water Rafting</p>
+        <nav>
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook.png" alt="facebook" width="70">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.png" alt="instagram" width="70">
+            </a>
+            <a href="https://x.com/">
+                <img src="images/x.png" alt="x" width="70">
+            </a>
+        </nav>
+        <p><a href="images/trips-wireframe.jpg">Trips Page Wireframe</a></p>    
+    </footer>
+</body>
+</html>
+
+    
+
+You'll need to add these additional CSS rules to your existing rafting.css file:
+
+    
+/* Trips Page Specific Styles */
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.trip-card {
+    background-color: var(--accent2-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.trip-table {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: var(--accent2-color);
+    border-radius: 8px;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.trip-table th, 
+.trip-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--primary);
+}
+
+.trip-table th {
+    background-color: var(--primary);
+    color: var(--accent1-color);
+}
+
+.trips-cta {
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--primary);
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+/* Responsive Design for Trips Page */
+@media (max-width: 768px) {
+    .trips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trip-table {
+        overflow-x: auto;
+    }
+}
